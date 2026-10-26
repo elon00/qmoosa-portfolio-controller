@@ -1,0 +1,41 @@
+name: QMOOSA Portfolio Audit
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qmoosa-portfolio-audit
+  cancel-in-progress: false
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout controller
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run repository inventory
+        env:
+          GITHUB_OWNER: elon00
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/portfolio_audit.py
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qmoosa-portfolio-inventory
+          path: reports/
+          retention-days: 30
