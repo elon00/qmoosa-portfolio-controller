@@ -1,35 +1,5 @@
 {
-  "engine": "REA_Reverse_Engineer_Anything",
-  "status": "STRUCTURE_RECONSTRUCTED",
-  "analyzed_files": 9,
-  "manifest": {
-    "index.html": {
-      "bytes": 36008
-    },
-    "README.md": {
-      "bytes": 3262
-    },
-    "reports\\portfolio_inventory.json": {
-      "bytes": 1092064
-    },
-    "scripts\\portfolio_audit.py": {
-      "bytes": 7650
-    },
-    "scripts\\rea_inspector.py": {
-      "bytes": 1485
-    },
-    "scripts\\rsi_engine.py": {
-      "bytes": 2039
-    },
-    "tests\\reality_check_harness.py": {
-      "bytes": 1250
-    },
-    ".github\\workflows\\qmoosa-portfolio-audit.yml": {
-      "bytes": 886
-    },
-    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
-      "bytes": 531
-    }
-  },
-  "timestamp": 1794023762
+  "engine": "REA_Inspector",
+  "timestamp": 1794246987,
+  "total_files": 11
 }
