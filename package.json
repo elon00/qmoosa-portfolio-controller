@@ -1,0 +1,7 @@
+{
+  "name": "qmoosa-portfolio-controller",
+  "version": "1.0.0",
+  "description": "QMOOSA Web4 Autonomous Architecture for qmoosa-portfolio-controller",
+  "main": "index.js",
+  "license": "MIT"
+}

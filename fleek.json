@@ -1,0 +1,12 @@
+{
+  "name": "qmoosa-portfolio-controller",
+  "chain": "Generic Web4",
+  "distDir": "dist",
+  "storage": {
+    "provider": "ipfs",
+    "pin": true
+  },
+  "domains": [
+    "qmoosa-portfolio-controller.eth.limo"
+  ]
+}
